@@ -1,13 +1,10 @@
 export const state = {
-  sections: [],
-  pages: []
+  menu: {},
+  sections: []
 }
 
 export const mutations = {
-  init (state, sections) {
-    state.sections = sections
-  },
-  initPages (state, pages) {
-    state.pages = pages
+  init (state, menu) {
+    state.menu = menu
   }
 }

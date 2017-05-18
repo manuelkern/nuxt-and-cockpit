@@ -2,9 +2,8 @@
   <div>
 
     <ul>
-      <li v-for="section in sections">
+      <li v-for="section in menu.section">
         {{ section.title }}
-          <grid-page v-if="section.pages" :parentPages="section.pages"></grid-page>
       </li>
     </ul>
 
@@ -13,18 +12,14 @@
 
 <script>
 
-import gridPage from './grid-page'
 import {mapState} from 'vuex'
-import {storeSections} from './shared'
+import {storeMenu} from './shared'
 
 export default {
-  fetch: storeSections,
-  components: {
-    gridPage
-  },
+  fetch: storeMenu,
   computed: {
     ...mapState({
-      sections: state => state.sections
+      menu: state => state.menu[0]
     })
   }
 }
