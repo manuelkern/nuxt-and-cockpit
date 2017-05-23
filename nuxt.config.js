@@ -16,11 +16,20 @@ module.exports = {
   /*
   ** CSS
   */
-  // css: ['tachyons/css/tachyons.css'],
+  css: [
+    { src: '~assets/css/main.scss', lang: 'scss' } // scss instead of sass
+  ],
+  /*
+  ** Router config
+  */
+  router: {
+    linkExactActiveClass: 'exact-active-link',
+    middleware: ['index']
+  },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#EE3524' },
   /*
   ** Build configuration
   */

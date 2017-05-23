@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'MarkBook';
+    src: url('~assets/fonts/MarkBook.eot');
+    src: url('~assets/fonts/MarkBook.eot') format('embedded-opentype'),
+         url('~assets/fonts/MarkBook.woff2') format('woff2'),
+         url('~assets/fonts/MarkBook.woff') format('woff'),
+         url('~assets/fonts/MarkBook.ttf') format('truetype'),
+         url('~assets/fonts/MarkBook.svg#MarkBook') format('svg');
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'MarkBook';
+}
+
+.page {
+  width: 100%;
+  .content {
+    position: absolute;
+    width: calc(100% - 120px);
+    left: 120px;
+  }
+}

@@ -1,5 +1,5 @@
 <template>
   <div>
-    Ouups
+    You've broken everything, you fool
   </div>
 </template>
